@@ -70,6 +70,7 @@ const { entries, getHost, getPrimaryClient, getPoints, isOpen, toggle } = useExp
               <span
                 v-for="(client, clientIndex) in entry.clients"
                 :key="client.id"
+                class="experience__client-name"
               >{{ clientIndex ? ' · ' : '' }}{{ client.name }}</span>
             </span>
           </span>
@@ -330,6 +331,8 @@ const { entries, getHost, getPrimaryClient, getPoints, isOpen, toggle } = useExp
   }
 
   &__client {
+    display: flex;
+    flex-wrap: wrap;
     min-width: 0;
     max-width: 100%;
     font-family: $font-mono;
@@ -338,6 +341,10 @@ const { entries, getHost, getPrimaryClient, getPoints, isOpen, toggle } = useExp
     line-height: 1.45;
     letter-spacing: 0.04em;
     color: $color-muted;
+  }
+
+  &__client-name {
+    white-space: nowrap;
   }
 
   &__company {

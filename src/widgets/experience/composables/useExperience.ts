@@ -5,7 +5,7 @@ import { PROFILE_EXPERIENCE } from '~/shared/constants'
 
 export const useExperience = () => {
   const { t, tm, rt, locale } = useI18n()
-  const openId = ref<string | null>(PROFILE_EXPERIENCE[0]?.id ?? null)
+  const openIds = ref<string[]>(PROFILE_EXPERIENCE[0] ? [PROFILE_EXPERIENCE[0].id] : [])
 
   const formatDuration = (months: number): string => {
     const years = Math.floor(months / 12)
@@ -38,12 +38,15 @@ export const useExperience = () => {
   const getPoints = (id: string): string[] =>
     (tm(`experience.items.${id}.points`) as unknown as string[]).map(point => rt(point))
 
-  const isOpen = (id: string): boolean => openId.value === id
+  const isOpen = (id: string): boolean => openIds.value.includes(id)
 
   const toggle = (id: string): void => {
-    const next = isOpen(id) ? null : id
-    openId.value = next
-    if (next) track('experience_open', { id: next })
+    if (isOpen(id)) {
+      openIds.value = openIds.value.filter(item => item !== id)
+      return
+    }
+    openIds.value = [...openIds.value, id]
+    track('experience_open', { id })
   }
 
   return {
