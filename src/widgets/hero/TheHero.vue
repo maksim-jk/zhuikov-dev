@@ -185,7 +185,7 @@ const { title, currentJob, lines, isTracking, letterStyle, stack, trackCta } = u
   }
 
   &__cv-download {
-    @include respond-min($bp-md) {
+    @include respond-min($bp-lg) {
       width: 100%;
     }
   }
