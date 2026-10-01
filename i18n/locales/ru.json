@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Максим Жуйков — Senior Frontend Engineer",
+    "description": "Максим Жуйков — фронтенд-инженер из Ташкента. Vue, Nuxt, React, TypeScript. Банковские системы, UI-киты, производительность и SEO."
+  },
+  "nav": {
+    "board": "Доска",
+    "about": "Обо мне",
+    "experience": "Опыт",
+    "terminal": "Терминал",
+    "contact": "Контакты",
+    "lang-switch": "Switch to English",
+    "scroll-top": "Наверх"
+  },
+  "hero": {
+    "eyebrow": "Персональный сайт / v1.0",
+    "first-name": "Максим",
+    "last-name": "Жуйков",
+    "role-label": "Роль",
+    "location-label": "Локация",
+    "role": "Senior Software Engineer",
+    "location": "Ташкент, Узбекистан",
+    "status": "Открыт к предложениям",
+    "lead": "Строю интерфейсы для банков, экосистем и продуктов, которыми пользуются тысячи людей. Vue, Nuxt, React, TypeScript — и много внимания к архитектуре и деталям.",
+    "cta-board": "Порисовать на доске",
+    "cta-contact": "Связаться",
+    "scroll": "Листай",
+    "job": {
+      "title": "Текущее место работы",
+      "since": "В команде с {date}",
+      "project": "Проект — {name}"
+    }
+  },
+  "led": {
+    "index": "01",
+    "title": "Доска переключателей",
+    "subtitle": "{count} тумблеров со светодиодами. Кликай или веди с зажатой кнопкой, чтобы рисовать. Рисунок сохраняется в браузере.",
+    "mobile-hint": "Доска шире экрана — листай вбок",
+    "lit": "горит",
+    "device": "Матрица MZ-9216",
+    "tools-label": "Инструменты доски",
+    "tools": {
+      "auto": "Тумблер",
+      "pan": "Листать",
+      "draw": "Рисовать",
+      "erase": "Стирать",
+      "clear": "Очистить",
+      "invert": "Инверсия",
+      "reset": "Моё фото",
+      "life": "Жизнь",
+      "pause": "Пауза",
+      "export": "PNG",
+      "share": "Ссылка",
+      "copied": "Скопировано"
+    }
+  },
+  "about": {
+    "index": "02",
+    "title": "Обо мне",
+    "text": "Фронтенд-разработчик с опытом 4+ лет: SPA и SSR-приложения на Vue, Nuxt, React и TypeScript. Сильная сторона — фронтенд-архитектура, UI-системы, производительность, SEO и доступность. Делал финтех, e-commerce, B2B и B2C. Придерживаюсь SOLID, DRY, KISS, YAGNI и активно участвую в code review и командных стандартах.",
+    "stats": {
+      "years": "лет в коммерческой разработке",
+      "companies": "компаний и команд",
+      "banks": "банковские АБС в продакшене",
+      "followers": "подписчиков в LinkedIn"
+    },
+    "certificates-title": "Сертификаты",
+    "certificates": {
+      "view": "Открыть",
+      "website": "Сайт",
+      "close": "Закрыть",
+      "mentor": {
+        "title": "Mentor Certificate of Recognition",
+        "issuer": "Tech4Impact × UNDP × Минэкономфин",
+        "about": "Digital Internship and Mentoring Program. Хост-компания — Kapitalbank.",
+        "date": "Декабрь 2025"
+      },
+      "english": {
+        "title": "English Language Course",
+        "issuer": "Inter Nation English School",
+        "about": "Курс английского языка, уровень Pre-Intermediate.",
+        "date": "INTEST MAX"
+      }
+    }
+  },
+  "experience": {
+    "index": "03",
+    "title": "Опыт",
+    "present": "сейчас",
+    "expand": "Подробнее",
+    "collapse": "Свернуть",
+    "years": "{n} г.",
+    "months": "{n} мес.",
+    "full-time": "Полная занятость",
+    "part-time": "Частичная занятость",
+    "on-site": "В офисе",
+    "remote": "Удалённо",
+    "website": "Сайт компании",
+    "project": "Проект",
+    "projects": "Проекты",
+    "items": {
+      "uzum": {
+        "role": "Frontend Developer",
+        "about": "Крупнейшая цифровая экосистема Узбекистана, 10 000+ сотрудников. Продукт — АБС Капиталбанка.",
+        "points": [
+          "Функционал автоматизированной банковской системы, интеграция SWIFT",
+          "Создание и сопровождение корпоративной UI-системы Uzum UI",
+          "Оптимизация фронтенда: Lighthouse, code splitting, lazy loading",
+          "Рефакторинг и модернизация кода по SOLID, DRY, KISS",
+          "Code review, архитектурные решения, работа с backend, QA и дизайном"
+        ]
+      },
+      "expera": {
+        "role": "Frontend Developer",
+        "about": "IT-компания, 1 000+ сотрудников: цифровая трансформация для банков и крупного бизнеса. Продукт — АБС NBU.",
+        "points": [
+          "Клиентские модули АБС банка NBU на Vue 3 и FSD",
+          "Миграция на новые версии библиотек, устранение техдолга",
+          "Поддержка и развитие продуктов на Vue 2",
+          "Проектирование архитектуры и интеграция через API-шлюз"
+        ]
+      },
+      "ax-technology": {
+        "role": "Frontend Developer",
+        "about": "Международная proptech-компания из Дубая, 1 000+ сотрудников.",
+        "points": [
+          "Корпоративные сайты и внутренние приложения на Vue 3, Nuxt 3, TypeScript",
+          "Фронтенд-архитектура и переиспользуемые компоненты",
+          "SEO: schema.org, микроразметка, sitemap, robots.txt",
+          "Мультиязычность через i18n",
+          "Доступность (WCAG) и производительность: SSR, кеширование, lazy loading",
+          "Адаптивные интерфейсы и анимации"
+        ]
+      },
+      "treeweb": {
+        "role": "Frontend Developer",
+        "about": "Веб-студия, 100+ сотрудников: продукты для государственных и коммерческих заказчиков, включая Росатом.",
+        "points": [
+          "SPA на React 17/18 и TypeScript",
+          "Лендинги, интернет-магазины и корпоративные сайты, в том числе для Росатома",
+          "Redux, RTK Query, Zustand",
+          "MUI, AntDesign, NextUI, styled-components",
+          "Поддержка и развитие проектов на Bitrix"
+        ]
+      },
+      "tomiris": {
+        "role": "Frontend Developer",
+        "about": "Компания, 50+ сотрудников: разработка и сопровождение цифровых продуктов для бизнеса.",
+        "points": [
+          "SPA на React и Vue 3 (TypeScript, JavaScript)",
+          "Верстка и интеграция под Bitrix",
+          "Архитектура проектов: Webpack, Vite, ESLint, Prettier",
+          "UI-компоненты и интеграция REST API, юнит-тесты на Jest",
+          "Вспомогательные сервисы на Node.js (Express), PostgreSQL, MongoDB"
+        ]
+      }
+    }
+  },
+  "terminal": {
+    "index": "04",
+    "title": "Терминал",
+    "subtitle": "Для тех, кто предпочитает клавиатуру. Набери help.",
+    "placeholder": "введи команду…",
+    "welcome": "zhuikov-os 1.0 — набери help, чтобы увидеть команды",
+    "not-found": "команда не найдена: {cmd}. Попробуй help",
+    "help": [
+      "help          — список команд",
+      "whoami        — кто я",
+      "stack         — технологии",
+      "experience    — где работал",
+      "contact       — как связаться",
+      "cv ru / cv en — открыть резюме",
+      "led clear     — погасить доску",
+      "led invert    — инвертировать доску",
+      "led reset     — вернуть фото",
+      "led life      — запустить «Жизнь» Конвея",
+      "lang en       — switch to English",
+      "clear         — очистить терминал"
+    ],
+    "whoami": [
+      "Максим Жуйков — Senior Software Engineer {'@'} Uzum",
+      "Ташкент, Узбекистан. 4+ года во фронтенде.",
+      "Люблю чистую архитектуру, быстрые интерфейсы и тумблеры."
+    ],
+    "led-done": "готово ✓ — проверь доску выше",
+    "lang-done": "переключаю язык…"
+  },
+  "cv": {
+    "title": "Скачать резюме",
+    "short": "CV",
+    "lang-label": "Язык резюме",
+    "download": "Скачать CV {language} (PDF)",
+    "languages": {
+      "ru": "на русском",
+      "en": "на английском"
+    },
+    "card-title": "Резюме",
+    "card-text": "PDF, русская и английская версии"
+  },
+  "contact": {
+    "index": "05",
+    "title": "Давай поработаем вместе",
+    "text": "Ищу продуктовую команду со сложными интерфейсами: финтех, экосистемы, B2B. Проще всего написать в Telegram или на почту.",
+    "mail-label": "Почта для предложений",
+    "write": "Написать письмо",
+    "copy": "Скопировать адрес",
+    "copied": "Скопировано",
+    "channels-label": "Профили",
+    "channels": {
+      "telegram": "Самый быстрый способ связаться",
+      "linkedin": "Опыт, рекомендации, сообщения",
+      "github": "Код и пет-проекты"
+    },
+    "facts": {
+      "status": "Статус",
+      "status-value": "Открыт к предложениям",
+      "format": "Формат",
+      "format-value": "Офис, гибрид или удалёнка, рассматриваю релокацию",
+      "time": "Ташкент, UTC+5",
+      "time-value": "У меня сейчас {time}",
+      "response": "Ответ",
+      "response-value": "Обычно в течение дня"
+    },
+    "footer": "Собрано на Nuxt, статикой. Ни одного cookie."
+  }
+}

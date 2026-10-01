@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus-visible {
+  outline: 2px solid $color-led;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: $color-led;
+  color: $color-ink;
+}
+
+html {
+  font-family: $font-main;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: $color-ink;
+  color: $color-text;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image:
+    linear-gradient($color-grid 1px, transparent 1px),
+    linear-gradient(90deg, $color-grid 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: -1px -1px;
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.9s $ease-out, transform 0.9s $ease-out;
+  transition-delay: var(--reveal-delay, 0s);
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes led-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes caret {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

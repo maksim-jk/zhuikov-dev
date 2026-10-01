@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Maksim Zhuikov — Senior Frontend Engineer",
+    "description": "Maksim Zhuikov is a frontend engineer based in Tashkent. Vue, Nuxt, React, TypeScript. Core banking systems, UI kits, performance and SEO."
+  },
+  "nav": {
+    "board": "Board",
+    "about": "About",
+    "experience": "Experience",
+    "terminal": "Terminal",
+    "contact": "Contact",
+    "lang-switch": "Переключить на русский",
+    "scroll-top": "Back to top"
+  },
+  "hero": {
+    "eyebrow": "Personal site / v1.0",
+    "first-name": "Maksim",
+    "last-name": "Zhuikov",
+    "role-label": "Role",
+    "location-label": "Based in",
+    "role": "Senior Software Engineer",
+    "location": "Tashkent, Uzbekistan",
+    "status": "Open to work",
+    "lead": "I build interfaces for banks, ecosystems and products used by thousands of people. Vue, Nuxt, React, TypeScript — with a lot of care for architecture and details.",
+    "cta-board": "Draw on the board",
+    "cta-contact": "Get in touch",
+    "scroll": "Scroll",
+    "job": {
+      "title": "Current employer",
+      "since": "On the team since {date}",
+      "project": "Project — {name}"
+    }
+  },
+  "led": {
+    "index": "01",
+    "title": "Switch board",
+    "subtitle": "{count} toggle switches with LEDs. Click or drag to draw. Your drawing is saved in the browser.",
+    "mobile-hint": "The board is wider than the screen — swipe sideways",
+    "lit": "lit",
+    "device": "MZ-9216 matrix",
+    "tools-label": "Board tools",
+    "tools": {
+      "auto": "Toggle",
+      "pan": "Pan",
+      "draw": "Draw",
+      "erase": "Erase",
+      "clear": "Clear",
+      "invert": "Invert",
+      "reset": "My photo",
+      "life": "Life",
+      "pause": "Pause",
+      "export": "PNG",
+      "share": "Link",
+      "copied": "Copied"
+    }
+  },
+  "about": {
+    "index": "02",
+    "title": "About",
+    "text": "Frontend developer with 4+ years of experience building SPA and SSR applications with Vue, Nuxt, React and TypeScript. Strong in frontend architecture, UI systems, performance, SEO and accessibility. Shipped fintech, e-commerce, B2B and B2C products. I follow SOLID, DRY, KISS, YAGNI and actively contribute to code reviews and team standards.",
+    "stats": {
+      "years": "years in commercial development",
+      "companies": "companies and teams",
+      "banks": "core banking systems in production",
+      "followers": "LinkedIn followers"
+    },
+    "certificates-title": "Certificates",
+    "certificates": {
+      "view": "Open",
+      "website": "Website",
+      "close": "Close",
+      "mentor": {
+        "title": "Mentor Certificate of Recognition",
+        "issuer": "Tech4Impact × UNDP × Ministry of Economy and Finance",
+        "about": "Digital Internship and Mentoring Program. Host company — Kapitalbank.",
+        "date": "December 2025"
+      },
+      "english": {
+        "title": "English Language Course",
+        "issuer": "Inter Nation English School",
+        "about": "English language course, Pre-Intermediate level.",
+        "date": "INTEST MAX"
+      }
+    }
+  },
+  "experience": {
+    "index": "03",
+    "title": "Experience",
+    "present": "present",
+    "expand": "Details",
+    "collapse": "Collapse",
+    "years": "{n} yr | {n} yrs",
+    "months": "{n} mo",
+    "full-time": "Full-time",
+    "part-time": "Part-time",
+    "on-site": "On-site",
+    "remote": "Remote",
+    "website": "Company website",
+    "project": "Project",
+    "projects": "Projects",
+    "items": {
+      "uzum": {
+        "role": "Frontend Developer",
+        "about": "The largest digital ecosystem in Uzbekistan, 10,000+ employees. Product — Kapitalbank core banking system.",
+        "points": [
+          "Core banking system features, SWIFT integration",
+          "Built and maintain Uzum UI, the corporate design system for internal apps",
+          "Frontend optimization: Lighthouse, code splitting, lazy loading",
+          "Refactoring and modernization following SOLID, DRY, KISS",
+          "Code reviews, architecture decisions, collaboration with backend, QA and design"
+        ]
+      },
+      "expera": {
+        "role": "Frontend Developer",
+        "about": "IT company, 1,000+ employees: digital transformation for banks and enterprises. Product — NBU core banking system.",
+        "points": [
+          "Client modules of NBU core banking system with Vue 3 and FSD",
+          "Library upgrades and tech debt removal",
+          "Support and development of Vue 2 products",
+          "Architecture design and integration via API gateway"
+        ]
+      },
+      "ax-technology": {
+        "role": "Frontend Developer",
+        "about": "International proptech company from Dubai, 1,000+ employees.",
+        "points": [
+          "Corporate websites and internal apps with Vue 3, Nuxt 3, TypeScript",
+          "Frontend architecture and reusable components",
+          "SEO: schema.org, microdata, sitemap, robots.txt",
+          "Multilingual support with i18n",
+          "Accessibility (WCAG) and performance: SSR, caching, lazy loading",
+          "Responsive interfaces and animations"
+        ]
+      },
+      "treeweb": {
+        "role": "Frontend Developer",
+        "about": "Web studio, 100+ employees: products for government and commercial clients, including Rosatom.",
+        "points": [
+          "SPA with React 17/18 and TypeScript",
+          "Landing pages, e-commerce and corporate websites, including for Rosatom",
+          "Redux, RTK Query, Zustand",
+          "MUI, AntDesign, NextUI, styled-components",
+          "Support and development of Bitrix projects"
+        ]
+      },
+      "tomiris": {
+        "role": "Frontend Developer",
+        "about": "Company of 50+ people building and maintaining digital products for businesses.",
+        "points": [
+          "SPA with React and Vue 3 (TypeScript, JavaScript)",
+          "Markup and Bitrix CMS integration",
+          "Project tooling: Webpack, Vite, ESLint, Prettier",
+          "UI components, REST API integration, Jest unit tests",
+          "Supporting services with Node.js (Express), PostgreSQL, MongoDB"
+        ]
+      }
+    }
+  },
+  "terminal": {
+    "index": "04",
+    "title": "Terminal",
+    "subtitle": "For keyboard people. Type help.",
+    "placeholder": "type a command…",
+    "welcome": "zhuikov-os 1.0 — type help to see available commands",
+    "not-found": "command not found: {cmd}. Try help",
+    "help": [
+      "help          — list commands",
+      "whoami        — who am I",
+      "stack         — technologies",
+      "experience    — where I worked",
+      "contact       — how to reach me",
+      "cv en / cv ru — open my resume",
+      "led clear     — turn the board off",
+      "led invert    — invert the board",
+      "led reset     — bring the photo back",
+      "led life      — run Conway's Game of Life",
+      "lang ru       — переключить на русский",
+      "clear         — clear the terminal"
+    ],
+    "whoami": [
+      "Maksim Zhuikov — Senior Software Engineer {'@'} Uzum",
+      "Tashkent, Uzbekistan. 4+ years in frontend.",
+      "I love clean architecture, fast interfaces and toggle switches."
+    ],
+    "led-done": "done ✓ — check the board above",
+    "lang-done": "switching language…"
+  },
+  "cv": {
+    "title": "Download resume",
+    "short": "CV",
+    "lang-label": "Resume language",
+    "download": "Download CV {language} (PDF)",
+    "languages": {
+      "ru": "in Russian",
+      "en": "in English"
+    },
+    "card-title": "Resume",
+    "card-text": "PDF, English and Russian versions"
+  },
+  "contact": {
+    "index": "05",
+    "title": "Let's work together",
+    "text": "Looking for a product team building complex interfaces: fintech, ecosystems, B2B. Telegram or email is the easiest way to reach me.",
+    "mail-label": "Email for offers",
+    "write": "Write an email",
+    "copy": "Copy address",
+    "copied": "Copied",
+    "channels-label": "Profiles",
+    "channels": {
+      "telegram": "The fastest way to reach me",
+      "linkedin": "Experience, recommendations, DMs",
+      "github": "Code and side projects"
+    },
+    "facts": {
+      "status": "Status",
+      "status-value": "Open to offers",
+      "format": "Format",
+      "format-value": "On-site, hybrid or remote, open to relocation",
+      "time": "Tashkent, UTC+5",
+      "time-value": "It's {time} here now",
+      "response": "Response",
+      "response-value": "Usually within a day"
+    },
+    "footer": "Built with Nuxt, fully static. Zero cookies."
+  }
+}

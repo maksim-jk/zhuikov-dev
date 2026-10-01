@@ -1,0 +1,29 @@
+# Nuxt
+.nuxt
+.output
+.data
+dist
+.cache
+
+# Node
+node_modules
+.npm
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build meta
+public/_meta.json
+
+# Private sources
+source

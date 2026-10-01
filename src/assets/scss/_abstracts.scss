@@ -1,0 +1,98 @@
+// ─── Colors ───────────────────────────────────────────────────────────────────
+$color-ink:        #0b0c0e;
+$color-panel:      #15171b;
+$color-panel-high: #1c1f24;
+$color-line:       #262a31;
+$color-line-high:  #353a43;
+$color-grid:       rgba(255, 255, 255, 0.028);
+$color-led:        #ffb547;
+$color-led-hot:    #ffd89a;
+$color-led-glow:   rgba(255, 181, 71, 0.45);
+$color-led-dim:    rgba(255, 181, 71, 0.12);
+$color-ok:         #6ee7a0;
+$color-text:       #e9e6df;
+$color-muted:      #8a8f98;
+$color-faint:      #5a5f68;
+
+// ─── Brands ───────────────────────────────────────────────────────────────────
+$brand-colors: (
+  uzum:          #7000ff,
+  expera:        #dc1923,
+  ax-technology: #d08160,
+  treeweb:       #506ccf,
+  tomiris:       $color-led,
+  tech4impact:   #e31c23,
+  internation:   #ffd531,
+  nbu:           #be9662,
+  axdesign:      #ad6243,
+  rir:           #4a78c8,
+  fgisopvk:      #035fa2,
+  kristall:      #2ad4c7,
+  rosfeo:        #035fa2,
+  kapitalbank:   #ffd531,
+  telegram:      #26a5e4,
+  linkedin:      #0a66c2,
+  github:        $color-text,
+);
+
+// ─── Typography ───────────────────────────────────────────────────────────────
+$font-display: 'Unbounded', sans-serif;
+$font-main:    'Geist', system-ui, sans-serif;
+$font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+// ─── Breakpoints ──────────────────────────────────────────────────────────────
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+
+// ─── Layout ───────────────────────────────────────────────────────────────────
+$container-max: 1320px;
+$container-px:  clamp(20px, 4vw, 56px);
+
+// ─── Radius ───────────────────────────────────────────────────────────────────
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 20px;
+
+// ─── Motion ───────────────────────────────────────────────────────────────────
+$ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+$transition: 0.35s $ease-out;
+
+// ─── Mixins ───────────────────────────────────────────────────────────────────
+@mixin respond($bp) {
+  @media (max-width: $bp) { @content; }
+}
+
+@mixin respond-min($bp) {
+  @media (min-width: $bp) { @content; }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: $container-max;
+  margin-inline: auto;
+  padding-inline: $container-px;
+}
+
+@mixin label {
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-muted;
+}
+
+@mixin led($size: 8px) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background: $color-led;
+  box-shadow: 0 0 calc($size * 1.2) $color-led-glow, 0 0 calc($size * 0.4) $color-led-hot inset;
+}
+
+@mixin panel {
+  background: $color-panel;
+  border: 1px solid $color-line;
+  border-radius: $radius-lg;
+}
