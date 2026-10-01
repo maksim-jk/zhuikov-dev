@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { email, mailto, links, year, localTime, copied, copyEmail } = useContact()
+const { email, mailto, links, year, localTime, copied, copyEmail, trackMail, trackChannel } = useContact()
 </script>
 
 <template>
@@ -23,6 +23,7 @@ const { email, mailto, links, year, localTime, copied, copyEmail } = useContact(
           <a
             :href="mailto"
             class="contact__email"
+            @click="trackMail"
           >{{ email }}</a>
         </div>
         <div class="contact__actions">
@@ -30,6 +31,7 @@ const { email, mailto, links, year, localTime, copied, copyEmail } = useContact(
             v-magnetic
             :href="mailto"
             class="contact__button contact__button--primary"
+            @click="trackMail"
           >
             {{ $t('contact.write') }}
             <span aria-hidden="true">↗</span>
@@ -73,6 +75,7 @@ const { email, mailto, links, year, localTime, copied, copyEmail } = useContact(
             :class="`contact__channel--${link.id}`"
             target="_blank"
             rel="noopener noreferrer"
+            @click="trackChannel(link.id)"
           >
             <span
               class="contact__channel-icon"

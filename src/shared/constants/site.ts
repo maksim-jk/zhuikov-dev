@@ -1,3 +1,4 @@
+export const SITE_GA_ID = 'G-11RHWVKWBX'
 export const SITE_REPO = 'zhuikov-dev'
 export const SITE_HOST = 'https://maksim-jk.github.io'
 export const SITE_BASE = `/${SITE_REPO}/`

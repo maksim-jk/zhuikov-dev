@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { navItems, cvSize, isScrolled, isEnglish, nextLocalePath } = useHeader()
+const { navItems, cvSize, isScrolled, isEnglish, nextLocalePath, trackLocale } = useHeader()
 </script>
 
 <template>
@@ -39,6 +39,7 @@ const { navItems, cvSize, isScrolled, isEnglish, nextLocalePath } = useHeader()
       :to="nextLocalePath"
       class="header__lang"
       :aria-label="$t('nav.lang-switch')"
+      @click="trackLocale"
     >
       <span
         class="header__lang-label"

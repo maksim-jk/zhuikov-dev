@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { title, currentJob, lines, isTracking, letterStyle, stack } = useHero()
+const { title, currentJob, lines, isTracking, letterStyle, stack, trackCta } = useHero()
 </script>
 
 <template>
@@ -112,6 +112,7 @@ const { title, currentJob, lines, isTracking, letterStyle, stack } = useHero()
               v-magnetic
               href="#board"
               class="hero__cta"
+              @click="trackCta('board')"
             >
               {{ $t('hero.cta-board') }}
               <span aria-hidden="true">↓</span>
@@ -120,6 +121,7 @@ const { title, currentJob, lines, isTracking, letterStyle, stack } = useHero()
               v-magnetic
               href="#contact"
               class="hero__cta"
+              @click="trackCta('contact')"
             >
               {{ $t('hero.cta-contact') }}
             </a>

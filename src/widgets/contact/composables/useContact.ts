@@ -16,7 +16,16 @@ export const useContact = () => {
   )
 
   const copyEmail = async (): Promise<void> => {
+    track('email_copy')
     await copy(PROFILE_EMAIL)
+  }
+
+  const trackMail = (): void => {
+    track('email_click')
+  }
+
+  const trackChannel = (id: string): void => {
+    track('contact_click', { channel: id })
   }
 
   return {
@@ -27,5 +36,7 @@ export const useContact = () => {
     localTime,
     copied,
     copyEmail,
+    trackMail,
+    trackChannel,
   }
 }

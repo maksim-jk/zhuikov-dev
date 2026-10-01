@@ -35,11 +35,38 @@ export const useLedBoardToolbar = () => {
 
   const litLabel = computed(() => `${board.litCount.value.toString().padStart(4, '0')} / ${LED_CELL_COUNT}`)
 
+  const setTool = (value: LedTool): void => {
+    board.setTool(value)
+    track('led_tool', { tool: value })
+  }
+
+  const clear = (): void => {
+    board.clear()
+    track('led_clear')
+  }
+
+  const invert = (): void => {
+    board.invert()
+    track('led_invert')
+  }
+
+  const reset = (): void => {
+    board.reset()
+    track('led_reset')
+  }
+
+  const toggleLife = (): void => {
+    board.toggleLife()
+    track('led_life', { state: board.isLifeRunning.value ? 'on' : 'off' })
+  }
+
   const share = async (): Promise<void> => {
+    track('led_share')
     await copy(board.createShareUrl(requestUrl.origin, route.path))
   }
 
   const exportPng = async (): Promise<void> => {
+    track('led_png')
     const blob = await createLedPng(board.getCells())
     releaseDownload()
     downloadUrl.value = URL.createObjectURL(blob)
@@ -58,11 +85,11 @@ export const useLedBoardToolbar = () => {
     copied,
     downloadLink,
     downloadUrl,
-    setTool: board.setTool,
-    clear: board.clear,
-    invert: board.invert,
-    reset: board.reset,
-    toggleLife: board.toggleLife,
+    setTool,
+    clear,
+    invert,
+    reset,
+    toggleLife,
     share,
     exportPng,
   }

@@ -21,11 +21,16 @@ export const useHeader = () => {
   const isEnglish = computed(() => locale.value === 'en')
   const nextLocalePath = computed(() => switchLocalePath(isEnglish.value ? 'ru' : 'en'))
 
+  const trackLocale = (): void => {
+    track('locale_switch', { locale: isEnglish.value ? 'ru' : 'en' })
+  }
+
   return {
     navItems: NAV_ITEMS,
     cvSize: CvDownloadSize.SM,
     isScrolled,
     isEnglish,
     nextLocalePath,
+    trackLocale,
   }
 }

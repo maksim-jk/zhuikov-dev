@@ -82,8 +82,11 @@ export const useTerminal = () => {
       print(t('terminal.not-found', { cmd: `cv ${code ?? ''}`.trim() }), TerminalLineKind.ERROR)
       return
     }
-    print(`→ ${file.href}`, TerminalLineKind.ACCENT)
-    await navigateTo(file.href, { external: true, open: { target: '_blank' } })
+    const href = publicPath(file.href)
+    const fileName = href.split('/').pop() ?? href
+    track('cv_download', { language: file.lang, file_name: fileName })
+    print(`→ ${href}`, TerminalLineKind.ACCENT)
+    await navigateTo(href, { external: true, open: { target: '_blank' } })
   }
 
   const handlers: Record<string, TerminalCommandHandler> = {
@@ -113,6 +116,7 @@ export const useTerminal = () => {
     history.unshift(value)
 
     const [name = '', ...args] = value.toLowerCase().split(/\s+/)
+    track('terminal_command', { command: name })
     const handler = handlers[name]
     if (handler) handler(args)
     else print(t('terminal.not-found', { cmd: name }), TerminalLineKind.ERROR)

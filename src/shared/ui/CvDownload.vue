@@ -7,7 +7,7 @@ withDefaults(defineProps<{
   size: CvDownloadSize.MD,
 })
 
-const { files, selected, selectedIndex, downloadLabel, isSelected, select } = useCvDownload()
+const { files, selected, selectedIndex, downloadLabel, isSelected, select, trackDownload } = useCvDownload()
 </script>
 
 <template>
@@ -23,6 +23,7 @@ const { files, selected, selectedIndex, downloadLabel, isSelected, select } = us
       :title="downloadLabel"
       type="application/pdf"
       download
+      @click="trackDownload"
     >
       <svg
         class="cv__icon"

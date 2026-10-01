@@ -52,6 +52,10 @@ export const useHero = () => {
 
   const stack = [...PROFILE_STACK, ...PROFILE_STACK]
 
+  const trackCta = (id: string): void => {
+    track('cta_click', { id })
+  }
+
   return {
     title,
     currentJob,
@@ -59,5 +63,6 @@ export const useHero = () => {
     isTracking,
     letterStyle,
     stack,
+    trackCta,
   }
 }

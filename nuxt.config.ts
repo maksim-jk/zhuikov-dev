@@ -1,4 +1,6 @@
-import { SITE_BASE, SITE_DEFAULT_LOCALE, SITE_HOST, SITE_LOCALES, SITE_URL } from './src/shared/constants/site'
+import { SITE_BASE, SITE_DEFAULT_LOCALE, SITE_GA_ID, SITE_HOST, SITE_LOCALES, SITE_URL } from './src/shared/constants/site'
+
+const gaSnippet = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${SITE_GA_ID}',{send_page_view:false});`
 
 const resolveSiteUrl = (): string => {
   const fromEnv = process.env.NUXT_PUBLIC_SITE_URL ?? process.env.SITE_URL
@@ -30,6 +32,10 @@ export default defineNuxtConfig({
       head: {
         link: [
           { rel: 'icon', type: 'image/svg+xml', href: `${SITE_BASE}favicon.svg` },
+        ],
+        script: [
+          { src: `https://www.googletagmanager.com/gtag/js?id=${SITE_GA_ID}`, async: true },
+          { innerHTML: gaSnippet },
         ],
       },
     },

@@ -46,6 +46,7 @@ export const useAbout = () => {
 
   const openCertificate = (id: string): void => {
     openedId.value = id
+    track('certificate_open', { id })
   }
 
   const closeCertificate = (): void => {

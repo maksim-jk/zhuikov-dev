@@ -25,6 +25,12 @@ export const useCvDownload = () => {
 
   const select = (lang: string): void => {
     pickedLang.value = lang
+    track('cv_language', { language: lang })
+  }
+
+  const trackDownload = (): void => {
+    const fileName = selected.value.href.split('/').pop() ?? selected.value.href
+    track('cv_download', { language: selected.value.lang, file_name: fileName })
   }
 
   return {
@@ -34,5 +40,6 @@ export const useCvDownload = () => {
     downloadLabel,
     isSelected,
     select,
+    trackDownload,
   }
 }

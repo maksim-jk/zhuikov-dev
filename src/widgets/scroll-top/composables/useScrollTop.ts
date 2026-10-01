@@ -18,6 +18,7 @@ export const useScrollTop = () => {
 
   // Сеттер y из useWindowScroll обрывает smooth-скролл на полпути, поэтому скроллим напрямую
   const scrollToTop = (): void => {
+    track('scroll_top')
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 

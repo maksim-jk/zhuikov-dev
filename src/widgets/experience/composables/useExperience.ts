@@ -41,7 +41,9 @@ export const useExperience = () => {
   const isOpen = (id: string): boolean => openId.value === id
 
   const toggle = (id: string): void => {
-    openId.value = isOpen(id) ? null : id
+    const next = isOpen(id) ? null : id
+    openId.value = next
+    if (next) track('experience_open', { id: next })
   }
 
   return {
